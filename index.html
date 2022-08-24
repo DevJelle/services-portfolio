@@ -2,15 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W620BBD15R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-W620BBD15R');
-</script>
     <link rel="icon" type="image/png" href="favicon.png" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,8 +28,8 @@
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Photographer and Videographer</p>
-                <h1>Hi I'm <span>Ben</span><br>from Belgium</h1>
+                <p>Automating your business</p>
+                <h1>Hi we are <span>Jelle & Deniz</span><br>from Belgium</h1>
             </div>
         </div>
     </div>
@@ -50,7 +41,7 @@
                     <img src="images/Ben.jpg">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
+                    <h1 class="sub-title">About Us</h1>
                     <p>My name is Ben Cauwenberghs, and my portfolio is a representation of all that I have learned
                         and
                         accomplished as a photographer and videographer. This keeps me busy in addition to my
@@ -92,7 +83,7 @@
     <!-- -----services----- -->
     <div id="services">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
+            <h1 class="sub-title">Our Services</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-camera"></i>
@@ -175,92 +166,92 @@
                 </div>
 
             </div>
-            </div>
         </div>
+    </div>
 
-        <!-- -----------contact------ -->
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
-                        <p><i class="fas fa-paper-plane"></i> benalfycontact@gmail.com</p>
-                        <p><i class="fas fa-phone-square-alt"></i> +32 494 99 11 43</p>
-                        <div class="social-icons">
-                            <a href=""><i class="fa-solid fa-align-justify"></i></a>
-                            <a href=""><i class="fa-solid fa-align-justify"></i></a>
-                            <a href=""><i class="fa-solid fa-align-justify"></i></a>
-                            <a href=""><i class="fa-solid fa-align-justify"></i></a>
-                        </div>
-                        <div class="extra-word">
-                            <p>Twijfel nooit om mij iets te vragen!<br>Een nee heb je een ja kan je krijgen!<br> </p>
-                        </div>
+    <!-- -----------contact------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> benalfycontact@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +32 494 99 11 43</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-solid fa-align-justify"></i></a>
+                        <a href=""><i class="fa-solid fa-align-justify"></i></a>
+                        <a href=""><i class="fa-solid fa-align-justify"></i></a>
+                        <a href=""><i class="fa-solid fa-align-justify"></i></a>
                     </div>
-                    <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
-                        </form>
-                        <span id="msg"></span>
+                    <div class="extra-word">
+                        <p>Twijfel nooit om mij iets te vragen!<br>Een nee heb je een ja kan je krijgen!<br> </p>
                     </div>
                 </div>
-        </div>
-            <div class="copyright">
-                <p>Copyright © Ben. </p>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
             </div>
         </div>
-        <!-- ------------Scripts------------ -->
+        <div class="copyright">
+            <p>Copyright © Ben. </p>
+        </div>
+    </div>
+    <!-- ------------Scripts------------ -->
 
-        <script>
+    <script>
 
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
-            function opentab(tabname) {
-                for (tablink of tablinks) {
-                    tablink.classList.remove("active-link");
-                }
-                for (tabcontent of tabcontents) {
-                    tabcontent.classList.remove("active-tab");
-                }
-
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
             }
-        </script>
-        <button id="myBtn"><a href="#top" style="color: white;"><i class="fa-solid fa-arrow-up"></i></a></button>
-
-        <script>
-            var sidemenu = document.getElementById("sidemenu");
-
-            function openmenu() {
-                sidemenu.style.right = "0px";
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
             }
-            function closemenu() {
-                sidemenu.style.right = "-200px";
-            }
-        </script>
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbz5rbXow6odYMCiNKH4nfxBqXqsc1RoS8rg3vYT_JoXEWe1aPKK6Y9QwIIt79Qg1abm/exec'
-            const form = document.forms['submit-to-google-sheet']
-            const msg = document.getElementById("msg")
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <button id="myBtn"><a href="#top" style="color: white;"><i class="fa-solid fa-arrow-up"></i></a></button>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0px";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz5rbXow6odYMCiNKH4nfxBqXqsc1RoS8rg3vYT_JoXEWe1aPKK6Y9QwIIt79Qg1abm/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
                     msg.innerHTML = "Message sent successfully"
-                    setTimeout(function(){
+                    setTimeout(function () {
                         msg.innerHTML = ""
-                    },5000)
+                    }, 5000)
                     form.reset()
                 })
                 .catch(error => console.error('Error!', error.message))
-            })
-          </script>
-          <script src="//code.tidio.co/tor4b3bvo2kossvdf2l9adrmassfsizw.js" async></script>
+        })
+    </script>
+    <script src="//code.tidio.co/tor4b3bvo2kossvdf2l9adrmassfsizw.js" async></script>
 </body>
 
 </html>
