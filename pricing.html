@@ -2,70 +2,131 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing</title>
-    <link rel="stylesheet" href="style-pricing.css">
-    <script src="https://kit.fontawesome.com/2a4dbfa130.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing Cards</title>
+  <link rel="stylesheet" href="styles-pricing.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="container">
-        <div class="top">
-            <h1>Plans & Pricing</h1>
-            <div class="toggle-btn">
-                <span style="margin: 0.8em;">Annually</span>
-                <label class="switch">
-                    <input type="checkbox" id="checbox" onclick="check()" ; />
-                    <span class="slider round"></span>
-                </label>
-                <span style="margin: 0.8em;">Monthly</span>
-            </div>
-        </div>
-
-        <div class="package-container">
-            <div class="packages">
-                <h1>One-time</h1>
-                <h2 class="text1">&dollar;9.99</h2>
-                <h2 class="text2">&dollar;119.99</h2>
-                <ul class="list">
-                    <li class="first">Sample text</li>
-                    <li>Sample text</li>
-                    <li>Sample text</li>
-                    <li>Sample text</li>
-                </ul>
-                <a href="#" class="button button1">Continue</a>
-            </div>
-            <div class="packages">
-                <h1>Temporary</h1>
-                <h2 class="text1">&dollar;19.99</h2>
-                <h2 class="text2">&dollar;239.99</h2>
-                <ul class="list">
-                    <li class="first">One-time +</li>
-                    <li>Sample text</li>
-                    <li>Sample text</li>
-                    <li>Sample text</li>
-                </ul>
-                <a href="#" class="button button2">Continue</a>
-            </div>
-            <div class="packages">
-                <h1>Long-term</h1>
-                <h2 class="text1">&dollar;Contact us</h2>
-                <h2 class="text2">&dollar;Contact us</h2>
-                <ul class="list">
-                    <li class="first">Temporary +</li>
-                    <li>Sample text</li>
-                    <li>Sample text</li>
-                    <li>Sample text</li>
-                </ul>
-                <a href="#" class="button button3">Continue</a>
-            </div>
-        </div>
+  <header>
+    <h1>Our Pricing</h1>
+  </header>
+  <h2>Temporary projects</h2>
+  <div class="cards">
+    <div class="card shadow">
+      <ul>
+        <li class="pack">Service</li>
+        <li id="basic" class="price bottom-bar">&dollar;199.99<h3>/month</h3>
+        </li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li><button class="btn">Order</button></li>
+      </ul>
     </div>
+    <div class="card active">
+      <ul>
+        <button class="tag">⭐ Popular ⭐</button>
+        <li class="pack">Service</li>
+        <li id="professional" class="price bottom-bar">&dollar;199.99<h3>/month</h3>
+        </li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li><button class="btn active-btn">Order</button></li>
+      </ul>
+    </div>
+    <div class="card shadow">
+      <ul>
+        <li class="pack">Service</li>
+        <li id="master" class="price bottom-bar">&dollar;199.99<h3>/month</h3>
+        </li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li><button class="btn">Order</button></li>
+      </ul>
+    </div>
+  </div>
 
-    <script src="./script.js"></script>
+  <h2>One-time projects</h2>
+  <div class="cards">
+    <div class="card shadow">
+      <ul>
+        <li class="pack">Service</li>
+        <li id="basic" class="price bottom-bar">&dollar;19.99<h3>/hour</h3>
+        </li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li><button class="btn">Order</button></li>
+      </ul>
+    </div>
+    <div class="card active">
+      <ul>
+        <button class="tag">⭐ Popular ⭐</button>
+        <li class="pack">Service</li>
+        <li id="professional" class="price bottom-bar">&dollar;19.99<h3>/hour</h3>
+        </li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li><button class="btn active-btn">Order</button></li>
+      </ul>
+    </div>
+    <div class="card shadow">
+      <ul>
+        <li class="pack">Service</li>
+        <li id="master" class="price bottom-bar">&dollar;19.99<h3>/hour</h3>
+        </li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li><button class="btn">Order</button></li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Long-term projects</h2>
+  <div class="cards">
+    <div class="card shadow">
+      <ul>
+        <li class="pack">Service</li>
+        <li id="basic" class="price bottom-bar">&dollar;TBD
+        </li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li><button class="btn">Order</button></li>
+      </ul>
+    </div>
+    <div class="card active">
+      <ul>
+        <button class="tag">⭐ Popular ⭐</button>
+        <li class="pack">Service</li>
+        <li id="professional" class="price bottom-bar">&dollar;TBD
+        </li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li><button class="btn active-btn">Order</button></li>
+      </ul>
+    </div>
+    <div class="card shadow">
+      <ul>
+        <li class="pack">Service</li>
+        <li id="master" class="price bottom-bar">&dollar;TBD
+        </li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li class="bottom-bar">Sample text</li>
+        <li><button class="btn">Order</button></li>
+      </ul>
+    </div>
+  </div>
 </body>
 
 </html>
