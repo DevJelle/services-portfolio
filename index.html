@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Jelle & Deniz</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-pricing.css">
     <script src="https://kit.fontawesome.com/2a4dbfa130.js" crossorigin="anonymous"></script>
 </head>
 
@@ -21,7 +22,7 @@
                     <li><a href="#top" onclick="closemenu()">Home</a></li>
                     <li><a href="#about" onclick="closemenu()">About</a></li>
                     <li><a href="#services" onclick="closemenu()">Services</a></li>
-                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="pricing" onclick="closemenu()">Pricing</a></li>
                     <li><a href="#contact" onclick="closemenu()">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
@@ -79,171 +80,127 @@
     <div id="services">
         <div class="container">
             <h1 class="sub-title">Our Services</h1>
-            <div class="services-list">
-                <div>
-                    <h2>Automation Developer</h2>
-                    <p>270$ / month</p>
-                    <a href="#">Buy</a>
+            <div class="package-container">
+                <div class="packages">
+                    <h1>One-time</h1>
+                    <ul class="list">
+                        <li class="first">Sample text</li>
+                        <li>Sample text</li>
+                        <li>Sample text</li>
+                        <li>Sample text</li>
+                    </ul>
+                    <a href="#" class="button button1">Continue</a>
                 </div>
-                <div>
+                <div class="packages">
+                    <h1>Temporary</h1>
+                    <ul class="list">
+                        <li class="first">One-time +</li>
+                        <li>Sample text</li>
+                        <li>Sample text</li>
+                        <li>Sample text</li>
+                    </ul>
+                    <a href="#" class="button button2">Continue</a>
+                </div>
+                <div class="packages">
+                    <h1>Long-term</h1>
 
-                    <h2>Review code</h2>
-                    <p>30$ / hour<br>...</p>
-                    <a href="#">Buy</a>
-                </div>
-                <div>
-                    <h2>Bot design</h2>
-                    <p>50 $ / month</p>
-                    <a href="#">Buy</a>
+                    <ul class="list">
+                        <li class="first">Temporary +</li>
+                        <li>Sample text</li>
+                        <li>Sample text</li>
+                        <li>Sample text</li>
+                    </ul>
+                    <a href="#" class="button button3">Continue</a>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- ---------mywork-------- -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">Our Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/workB-1.png">
-                    <div class="layer1">
-                        <h3>Photography</h3>
-                        <p>Portraits, </p>
-                        <a href="mywork.html#photography"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+        <!-- ---------Our customers--------- -->
+        <div id="customers">
+            <div class="container">
+                <h1 class="sub-title">Our customers</h1>
+            </div>
+        </div>
+
+        <!-- -----------contact------ -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i> ...@gmail.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i> +32 499 37 85 92</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-solid fa-align-justify"></i></a>
+                            <a href=""><i class="fa-solid fa-align-justify"></i></a>
+                            <a href=""><i class="fa-solid fa-align-justify"></i></a>
+                            <a href=""><i class="fa-solid fa-align-justify"></i></a>
+                        </div>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png">
-                    <div class="layer1">
-                        <h3>Videography</h3>
-                        <p></p>
-                        <a href="mywork.html#videography"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/workB-3.png">
-                    <div class="layer1">
-                        <h3>Drone Pilot</h3>
-                        <p></p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
                     </div>
                 </div>
             </div>
-            <a href="mywork.html" class="btn">See More</a>
-        </div>
-    </div>
-
-    <!-- ---------my equipment--------- -->
-    <div id="equipment">
-        <div class="container">
-            <h1 class="sub-title">Our Equipment</h1>
-            <div class="equipment-list">
-                <div class="equipment">
-                    <a href="https://electronics.sony.com/imaging/interchangeable-lens-cameras/full-frame/p/ilce7m3-b"
-                        target="_blank">
-                        <img src="images/a7 3 t.png">
-                    </a>
-                </div>
-                <div class="equipment">
-                    <a href="https://linktr.ee/bencauwenberghs" target="_blank">
-                        <img src="images/lensens t.png">
-                    </a>
-                </div>
-
-                <div class="equipment">
-                    <a href="https://www.zhiyun-tech.com/en/product/detail/70?type=website&page=product_professional&source=list&title=WEEBILL-S"
-                        target="_blank">
-                        <img src="images/gimbal t.png">
-                    </a>
-
-                </div>
-
+            <div class="copyright">
+                <p>Copyright © Jelle & Deniz. </p>
             </div>
         </div>
-    </div>
+        <!-- ------------Scripts------------ -->
 
-    <!-- -----------contact------ -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i> ...@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i> +32 499 37 85 92</p>
-                    <div class="social-icons">
-                        <a href=""><i class="fa-solid fa-align-justify"></i></a>
-                        <a href=""><i class="fa-solid fa-align-justify"></i></a>
-                        <a href=""><i class="fa-solid fa-align-justify"></i></a>
-                        <a href=""><i class="fa-solid fa-align-justify"></i></a>
-                    </div>
-                    <div class="extra-word">
-                        <p>Twijfel nooit om mij iets te vragen!<br>Een nee heb je een ja kan je krijgen!<br> </p>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright © Jelle & Deniz. </p>
-        </div>
-    </div>
-    <!-- ------------Scripts------------ -->
+        <script>
 
-    <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
 
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
             }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
+        </script>
+        <button id="myBtn"><a href="#top" style="color: white;"><i class="fa-solid fa-arrow-up"></i></a></button>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0px";
             }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbz5rbXow6odYMCiNKH4nfxBqXqsc1RoS8rg3vYT_JoXEWe1aPKK6Y9QwIIt79Qg1abm/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
 
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <button id="myBtn"><a href="#top" style="color: white;"><i class="fa-solid fa-arrow-up"></i></a></button>
-
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu() {
-            sidemenu.style.right = "0px";
-        }
-        function closemenu() {
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbz5rbXow6odYMCiNKH4nfxBqXqsc1RoS8rg3vYT_JoXEWe1aPKK6Y9QwIIt79Qg1abm/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully"
-                    setTimeout(function () {
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully"
+                        setTimeout(function () {
+                            msg.innerHTML = ""
+                        }, 5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
 </body>
 
 </html>
