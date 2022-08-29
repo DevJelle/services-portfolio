@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #000000;
+  background: #201f25;
   color: #fff;
   min-height: 100%;
 }
@@ -60,7 +60,7 @@ nav ul li a::after {
   content: "";
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: #3cdfff;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -82,7 +82,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-  color: #ff004f;
+  color: #3cdfff;
 }
 
 /* ---------------about------------- */
@@ -138,7 +138,7 @@ nav ul li a:hover::after {
   content: "";
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: #3cdfff;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -155,7 +155,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-  color: #b54769;
+  color: #3cdfff;
   font-size: 14px;
 }
 
@@ -172,6 +172,39 @@ nav ul li a:hover::after {
 #servives {
   padding: 30px 0;
 }
+
+.middle-home-section ul {
+  margin-top: 5em;
+  display: flex;
+}
+
+
+
+.middle-home-section li {
+  background: #000;
+  text-align: center;
+  padding: 2em 1em;
+  width: 30%;
+  height: 500px;
+  margin: 0 auto 5em auto;
+  border-radius: 1em;
+  list-style-type: none;
+  transition: transform 0.3s ease;
+
+}
+
+.middle-home-section li:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 0 1px #3cdfff;
+  ;
+
+}
+
+.middle-home-section span {
+  color: #3cdfff;
+  font-weight: bold;
+}
+
 
 /* --------customers------- */
 #equipement {
@@ -204,7 +237,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
-  color: #ff004f;
+  color: #3cdfff;
   margin-right: 15px;
   font-size: 25px;
 }
@@ -223,13 +256,13 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover {
-  color: #ff004f;
+  color: #3cdfff;
   transform: translateY(-5px);
 }
 
 .btn.btn2 {
   display: inline-block;
-  background: #ff004f;
+  background: #3cdfff;
   cursor: pointer;
 }
 
@@ -267,7 +300,7 @@ form btn2 {
 }
 
 #myBtn:hover {
-  background-color: #ff004f;
+  background-color: #3cdfff;
 }
 
 #myBtn {
@@ -310,7 +343,7 @@ nav .fas {
   }
 
   nav ul {
-    background: #ff004f;
+    background: #3cdfff;
     position: fixed;
     top: 0;
     right: -200px;
