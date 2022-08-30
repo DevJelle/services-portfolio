@@ -326,6 +326,8 @@ nav .fas {
 (max-device-width: 900px) {
   #header {
     background-image: url(images/Jelle.jpg);
+    background-size: 100% auto;
+    background-attachment: scroll;
   }
 
   .header-text {
