@@ -173,11 +173,15 @@ nav ul li a:hover::after {
   padding: 30px 0;
 }
 
+
+
 .middle-home-section ul {
   margin-top: 5em;
   display: flex;
 }
 
+
+.middle-home-section:hover {}
 
 
 .middle-home-section li {
@@ -196,7 +200,7 @@ nav ul li a:hover::after {
 .middle-home-section li:hover {
   transform: scale(1.07);
   box-shadow: 0 0 0 1px #3cdfff;
-  ;
+  opacity: 0.2;
 
 }
 
@@ -367,6 +371,38 @@ nav .fas {
     left: 25px;
     cursor: pointer;
   }
+
+
+  .middle-home-section ul {
+    margin-top: 2em;
+  }
+
+
+
+  .middle-home-section li {
+    background: #000;
+    text-align: center;
+    padding: 2em 7em;
+    height: 500px;
+    margin: 0 auto 5em auto;
+    border-radius: 1em;
+    list-style-type: none;
+    text-decoration: none;
+    margin-top: 5em;
+    margin-right: 5em;
+
+  }
+
+
+
+
+
+
+  .middle-home-section span {
+    color: #3cdfff;
+    font-weight: bold;
+  }
+
 
   .sub-title {
     font-size: 40px;
