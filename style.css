@@ -181,9 +181,6 @@ nav ul li a:hover::after {
 }
 
 
-.middle-home-section:hover {}
-
-
 .middle-home-section li {
   background: #000;
   text-align: center;
@@ -382,7 +379,7 @@ nav .fas {
   .middle-home-section li {
     background: #000;
     text-align: center;
-    padding: 2em 7em;
+    padding: 2em 7em; 
     height: 500px;
     margin: 0 auto 5em auto;
     border-radius: 1em;
