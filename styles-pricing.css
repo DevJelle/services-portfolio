@@ -9,11 +9,8 @@ html {
 }
 
 body {
-  background: #f7f7ff;
+  background: #201f25;
   font-family: 'Montserrat', sans-serif;
-  width: 80%;
-  max-width: 1440px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,13 +18,18 @@ body {
 }
 
 header {
-  color: hsl(233, 13%, 49%);
+  color: white;
+
   margin: 1.3rem 0;
+  font-size: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+
+
 
 .toggle {
   margin-top: 2rem;
@@ -42,22 +44,51 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
 }
 
 .card {
   background: #fff;
-  color: hsl(233, 13%, 49%);
+  color: hsl(234, 14%, 74%);
   border-radius: 0.8rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  transition: transform 0.3s ease;
 }
 
-.cards .card.active {
-  background: linear-gradient(135deg, rgb(255, 143, 178) 0%, rgb(255, 0, 81) 100%);
-  color: #fff;
+.card:hover {
+  transform: scale(1.1);
+
+}
+
+.card:hover .btn {
+  background: linear-gradient(135deg, rgb(60, 223, 255) 0%, rgb(16, 102, 120) 100%);
+}
+
+.card:hover .active-btn {
+  background: linear-gradient(135deg, rgb(136, 136, 136) 0%, rgb(92, 92, 92) 100%);
+}
+
+
+
+.cards.card.active {
+  color: hsl(234, 14%, 74%);
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+
+
+
+.cards .card.active:hover {
+  background: linear-gradient(135deg, rgb(60, 223, 255) 0%, rgb(16, 102, 120) 100%);
+  color: white;
   display: flex;
   align-items: center;
   transform: scale(1.1);
-  z-index: 1;
 }
+
 
 ul {
   margin: 2.6rem;
@@ -86,7 +117,9 @@ ul li.price {
 }
 
 .card.active .price {
-  color: #fff;
+  color: hsl(232, 13%, 33%);
+
+
 }
 
 .btn {
@@ -97,7 +130,7 @@ ul li.price {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  background: linear-gradient(135deg, rgb(255, 143, 178) 0%, rgb(255, 0, 81) 100%);
+  background: linear-gradient(135deg, rgb(136, 136, 136) 0%, rgb(92, 92, 92) 100%);
   color: #fff;
   outline: none;
   border: 0;
@@ -105,8 +138,10 @@ ul li.price {
 }
 
 .active-btn {
-  background: #fff;
-  color: hsl(0, 0%, 0%);
+  background: linear-gradient(135deg, rgb(136, 136, 136) 0%, rgb(92, 92, 92) 100%);
+  color: #fff;
+
+
 }
 
 .tag {
@@ -138,6 +173,7 @@ ul li.price {
 h2 {
   color: hsl(233, 13%, 49%);
   margin: 3.3rem 0;
+  font-size: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
