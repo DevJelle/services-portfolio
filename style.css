@@ -103,60 +103,34 @@ nav ul li a:hover::after {
   color: #ababab;
 }
 
-.row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-}
-
-
-.tab-images {
-  flex-basis: 35%;
-  display: none
-}
-
-.tab-images {
-  border-radius: 15px;
-  transition: transform 0.5s ease;
-}
-
-.tab-images img:hover {
-  transform: scale(1.02);
-}
-
-.tab-images.active-img {
-  display: flex
-}
-
-.tab-image {
-  display: none
-}
-
-.tab-image img {
-  width: 15%;
-  border-radius: 15px;
-  transition: transform 0.5s ease;
-}
-
-.tab-image img:hover {
-  transform: scale(1.02);
-}
-
-.tab-image.active-img {
-  display: block;
-}
-
-
-
-.about-col-2 {
-  flex-basis: 60%;
-}
 
 .sub-title {
   font-size: 60px;
   font-weight: 600;
   color: #fff;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.5s ease;
+}
+
+.about-col-1 img:hover {
+  transform: scale(1.02);
+}
+
+.about-col-2 {
+  flex-basis: 60%;
 }
 
 .tab-titles {
@@ -176,7 +150,7 @@ nav ul li a:hover::after {
   content: "";
   width: 0;
   height: 3px;
-  background: #3cdfff;
+  background: #3CDFFF;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -193,7 +167,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-  color: #3cdfff;
+  color: #3CDFFF;
   font-size: 14px;
 }
 
@@ -204,6 +178,15 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
   display: block;
 }
+
+.tab-images{
+  display: none;
+}
+
+.tab-images.active-img{
+  display: flex;
+}
+
 
 /* ----------services------- */
 
@@ -220,7 +203,7 @@ nav ul li a:hover::after {
 
 
 .middle-home-section li {
-  background: #000;
+  background: #8C8C91;
   text-align: center;
   padding: 2em 1em;
   width: 30%;
@@ -303,6 +286,23 @@ nav ul li a:hover::after {
   display: inline-block;
   background: #3cdfff;
   cursor: pointer;
+}
+
+.btn {
+  display: block;
+  width: fit-content;
+  border: 1px solid #3cdfff;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #201F25;
+  transition: background 0.5s;
+  transition: scale 0.5s;
+}
+
+.btn:hover {
+  background: #3cdfff;
+  scale: 110%;
 }
 
 .contact-right form {
@@ -449,11 +449,11 @@ nav .fas {
   }
 
   .about-col-1 {
-    margin-bottom: 30px;
+    margin-bottom: 35%;
   }
 
   .about-col-2 {
-    font-size: 14px;
+    font-size: 60%;
   }
 
   .tab-links {

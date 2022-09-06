@@ -37,37 +37,46 @@
     <div id="about">
         <div class="container">
             <div class="row">
-                <!-- <div class="tab-image active-img">
-                    <img src="images/Jelle.jpg">
-                </div> -->
+                <div class="about-col-1">
+                    <div class="tab-images active-img" id="img1">
+                        <img src="images/Jelle.jpg">
+                    </div>
+                    <div class="tab-images" id="img2">
+                        <img src="images/Jelle.jpg">
+                    </div>
+                    <div class="tab-images" id="img3">
+                        <img src="images/Ben.jpg">
+                    </div>
+                </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Us</h1>
-                    <p>We are developers that help your business run smoother.</p>
+                    <p>Meet the team.</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('founder', 'img1')">Founder</p>
+                        <p class="tab-links" onclick="opentab('co-founder', 'img2')">Co-Founder</p>
+                        <p class="tab-links" onclick="opentab('photographer', 'img3')">Photographer</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+                    <div class="tab-contents active-tab" id="founder">
                         <ul>
-                            <li><span>Coding</span><br>Languages here
+                            <li><span>Photography</span><br>Portraits, Business headshots, family pictures, ...
                             </li>
-                            <li><span>Sample text</span><br>Commercial work, ... </li>
-                            <li><span>Sample text</span><br>Test</li>
+                            <li><span>Videography</span><br>Commercial video, ... </li>
+                            <li><span>Drone Pilot</span><br>Foto's and video's in the air</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="experience">
+                    <div class="tab-contents" id="co-founder">
                         <ul>
                             <li><span>Photography</span><br>+ </li>
                             <li><span>Videography</span><br>++ </li>
                             <li><span>Drone Pilot</span><br>+++</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="education">
+                    <div class="tab-contents" id="photographer">
                         <ul>
-                            <li><span>2022 - Current</span><br>Bacholor ...</li>
-                            <li><span>2020 - 2022</span><br>Secondary Sciences ...</li>
+                            <li><span>2022 - Current</span><br>Bacholor Business Management - Bussiness Engineering
+                                (vives)</li>
+                            <li><span>2020 - 2022</span><br>Secondary Sciences Economics (KTA)</li>
                             <li><span>2017 - 2020</span><br>Secondary Sciences Mathematics (CPJM)</li>
                         </ul>
                     </div>
@@ -214,16 +223,24 @@
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname) {
+        var tabImages = document.getElementsByClassName("tab-images")
+
+        function opentab(tabname, imgname) {
             for (tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
             for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
+            for (tabImage of tabImages) {
+                tabImage.classList.remove("active-img");
+            }
+
+
 
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
+            document.getElementById(imgname).classList.add("active-img");
         }
     </script>
     <button id="myBtn"><a href="#top" style="color: white;"><i class="fa-solid fa-arrow-up"></i></a></button>
