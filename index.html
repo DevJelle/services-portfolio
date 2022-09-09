@@ -20,7 +20,7 @@
                 <ul id="sidemenu">
                     <li><a href="#about" onclick="closemenu()">About</a></li>
                     <li><a href="#services" onclick="closemenu()">Services</a></li>
-                    <li><a href="pricing" onclick="closemenu()">Pricing</a></li>
+                    <li><a href="pricing.html" onclick="closemenu()">Pricing</a></li>
                     <li><a href="./login.html" onclick="closemenu()">Login</a></li>
 
                     <li><a href="#contact" onclick="closemenu()">Contact</a></li>
@@ -165,6 +165,20 @@
     <div id="customers">
         <div class="container">
             <h1 class="sub-title">Our customers</h1>
+            <div class="client-wrap">
+                <div class="client-in">
+                    <ul>
+                        <li>
+                            <img src="images/Customers-Bollaert-bw.png" alt="" />
+                            <img src="images/Customers-Bollaert.png" alt="" />
+                        </li>
+                        <li>
+                            <img src="images/Customers-Hotspotty-bw.jpg" alt="" />
+                            <img src="images/Customers-Hotspotty.jpg" alt="" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -188,7 +202,7 @@
                     <form action="https://formsubmit.co/servibility@gmail.com" method="POST">
                         <input type="email" name="email" placeholder="Email Address" required>
                         <input type="text" name="_subject" placeholder="Subject" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <textarea name="Message" rows="6" placeholder="Your Message" style="resize: none;"></textarea>
                         <button type="submit" class="btn btn2">Send</button>
                         <input type="hidden" name="_captcha" value="false">
                     </form>
@@ -239,7 +253,7 @@
             sidemenu.style.right = "-200px";
         }
         function openpricing() {
-            window.location = "/pricing"
+            window.location = "/pricing.html"
         }
     </script>
 </body>
