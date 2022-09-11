@@ -203,103 +203,109 @@
             </details>
         </div>
 
-        <!-- ---------Our customers--------- -->
-        <div id="customers">
+        <!-- ---------Why Servibility?--------- -->
+        <div id="why-section">
             <div class="container">
-                <h1 class="sub-title">Our customers</h1>
-                <div class="client-wrap">
-                    <div class="client-in">
-                        <ul>
-                            <li>
-                                <img src="images/Customers-Bollaert-bw.png" alt="" />
-                                <img src="images/Customers-Bollaert.png" alt="" />
-                            </li>
-                            <li>
-                                <img src="images/Customers-Hotspotty-bw.jpg" alt="" />
-                                <img src="images/Customers-Hotspotty.jpg" alt="" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <h1 class="sub-title">Why should I choose Servibility?</h1>
             </div>
-        </div>
 
-        <!-- -----------contact------ -->
-        <div id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Contact Us</h1>
-                        <p><i class="fas fa-paper-plane"></i> servibility@gmail.com</p>
-                        <p><i class="fas fa-phone-square-alt"></i><a href="https://calendly.com/servibility"
-                                target="_blank">Book a call</a>
-                        </p>
-                        <div class="social-icons">
-                            <a href=""><i class="fa-solid fa-align-justify"></i></a>
-                            <a href=""><i class="fa-solid fa-align-justify"></i></a>
-                            <a href=""><i class="fa-solid fa-align-justify"></i></a>
-                            <a href=""><i class="fa-solid fa-align-justify"></i></a>
+            <!-- ---------Our customers--------- -->
+            <div id="customers">
+                <div class="container">
+                    <h1 class="sub-title">Our customers</h1>
+                    <div class="client-wrap">
+                        <div class="client-in">
+                            <ul>
+                                <li>
+                                    <img src="images/Customers-Bollaert-bw.png" alt="" />
+                                    <img src="images/Customers-Bollaert.png" alt="" />
+                                </li>
+                                <li>
+                                    <img src="images/Customers-Hotspotty-bw.jpg" alt="" />
+                                    <img src="images/Customers-Hotspotty.jpg" alt="" />
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="contact-right">
-                        <form action="https://formsubmit.co/servibility@gmail.com" method="POST">
-                            <input type="email" name="email" placeholder="Email Address" required>
-                            <input type="text" name="_subject" placeholder="Subject" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"
-                                style="resize: none;"></textarea>
-                            <button type="submit" class="btn btn2">Send</button>
-                            <input type="hidden" name="_captcha" value="false">
-                        </form>
-
-                    </div>
                 </div>
             </div>
-            <div class="copyright">
-                <p>Copyright © Servibility </p>
+
+            <!-- -----------contact------ -->
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Us</h1>
+                            <p><i class="fas fa-paper-plane"></i> servibility@gmail.com</p>
+                            <p><i class="fas fa-phone-square-alt"></i><a href="https://calendly.com/servibility"
+                                    target="_blank">Book a call</a>
+                            </p>
+                            <div class="social-icons">
+                                <a href=""><i class="fa-solid fa-align-justify"></i></a>
+                                <a href=""><i class="fa-solid fa-align-justify"></i></a>
+                                <a href=""><i class="fa-solid fa-align-justify"></i></a>
+                                <a href=""><i class="fa-solid fa-align-justify"></i></a>
+                            </div>
+                        </div>
+                        <div class="contact-right">
+                            <form action="https://formsubmit.co/servibility@gmail.com" method="POST">
+                                <input type="email" name="email" placeholder="Email Address" required>
+                                <input type="text" name="_subject" placeholder="Subject" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"
+                                    style="resize: none;"></textarea>
+                                <button type="submit" class="btn btn2">Send</button>
+                                <input type="hidden" name="_captcha" value="false">
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © Servibility </p>
+                </div>
             </div>
-        </div>
-        <!-- ------------Scripts------------ -->
+            <!-- ------------Scripts------------ -->
 
-        <script>
+            <script>
 
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
 
-            var tabImages = document.getElementsByClassName("tab-images")
+                var tabImages = document.getElementsByClassName("tab-images")
 
-            function opentab(tabname, imgname) {
-                for (tablink of tablinks) {
-                    tablink.classList.remove("active-link");
+                function opentab(tabname, imgname) {
+                    for (tablink of tablinks) {
+                        tablink.classList.remove("active-link");
+                    }
+                    for (tabcontent of tabcontents) {
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    for (tabImage of tabImages) {
+                        tabImage.classList.remove("active-img");
+                    }
+
+
+
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                    document.getElementById(imgname).classList.add("active-img");
                 }
-                for (tabcontent of tabcontents) {
-                    tabcontent.classList.remove("active-tab");
+            </script>
+            <button id="myBtn"><a href="#top" style="color: white;"><i class="fa-solid fa-arrow-up"></i></a></button>
+
+            <script>
+                var sidemenu = document.getElementById("sidemenu");
+
+                function openmenu() {
+                    sidemenu.style.right = "0px";
                 }
-                for (tabImage of tabImages) {
-                    tabImage.classList.remove("active-img");
+                function closemenu() {
+                    sidemenu.style.right = "-200px";
                 }
-
-
-
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-                document.getElementById(imgname).classList.add("active-img");
-            }
-        </script>
-        <button id="myBtn"><a href="#top" style="color: white;"><i class="fa-solid fa-arrow-up"></i></a></button>
-
-        <script>
-            var sidemenu = document.getElementById("sidemenu");
-
-            function openmenu() {
-                sidemenu.style.right = "0px";
-            }
-            function closemenu() {
-                sidemenu.style.right = "-200px";
-            }
-            function openpricing() {
-                window.location = "/pricing.html"
-            }
-        </script>
+                function openpricing() {
+                    window.location = "/pricing.html"
+                }
+            </script>
 </body>
 
 </html>
